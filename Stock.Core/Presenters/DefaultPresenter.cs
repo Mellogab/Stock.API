@@ -1,0 +1,30 @@
+﻿using Stock.Core;
+
+namespace Stock.Presenters
+{
+    public class DefaultPresenter<T> : IOutputPort<T> where T : UseCaseResponseMessage
+    {
+        /// <summary>
+        /// Default presenter data stored
+        /// </summary>
+        private T Data { get; set; }
+
+        /// <summary>
+        /// Handle Method
+        /// </summary>
+        /// <param name="response"></param>
+        public void Handle(T response)
+        {
+            Data = response;
+        }
+
+        /// <summary>
+        /// Get current presenter data
+        /// </summary>
+        /// <returns></returns>
+        public T GetUseCaseResponse()
+        {
+            return Data;
+        }
+    }
+}
