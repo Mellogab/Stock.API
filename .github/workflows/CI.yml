@@ -4,12 +4,6 @@ on:
   push:
     branches:
       - master
-name: CI
-
-on:
-  push:
-    branches:
-      - master
 
 jobs:
   build:
