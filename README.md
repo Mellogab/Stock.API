@@ -8,3 +8,4 @@ API Pública com objetivo de consolidar as ações mais baratas da bolsa de valo
 - Escrita de testes unitários
 - Criação de testes de contrato integrados no CI/CD com step de rollback de versão em caso de falha dos testes
 - Build Readme
+- Add Rule in Cluster Mongo to allow operations from specified machine
